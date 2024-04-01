@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 20px);
+  font-size: 13px;
+  color: white;
+}
+.grid {
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  .box-1 {
+    padding: 20px;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 6;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 50px;
+        border-radius: 50%;
+        border: 3px solid hsl(0, 0%, 81%);
+      }
+      h3 {
+        font-size: 18px;
+        span {
+          display: block;
+          color: hsl(0, 0%, 81%);
+          font-size: 13px;
+        }
+      }
+    }
+    p:first-of-type {
+      font-size: 25px;
+      margin: 10px 0 20px;
+    }
+    p:last-of-type {
+      color: hsl(0, 0%, 81%);
+    }
+    position: relative;
+    &::before {
+      content: "“";
+      position: absolute;
+      right: 50px;
+      top: -20px;
+      font-size: 300px;
+      opacity: 0.5;
+    }
+  }
+  .box-2 {
+    padding: 20px;
+    grid-row: 1 / span 1;
+    grid-column: 7 / span 3;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 50px;
+        border-radius: 50%;
+        border: 3px solid hsl(0, 0%, 81%);
+      }
+      h3 {
+        font-size: 18px;
+        span {
+          display: block;
+          color: hsl(0, 0%, 81%);
+          font-size: 13px;
+        }
+      }
+    }
+    p:first-of-type {
+      font-size: 25px;
+      margin: 10px 0 20px;
+    }
+    p:last-of-type {
+      color: hsl(0, 0%, 81%);
+    }
+  }
+  .box-3 {
+    padding: 20px;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 3;
+    background-color: white;
+    border-radius: 10px;
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 50px;
+        border-radius: 50%;
+        border: 3px solid hsl(0, 0%, 81%);
+      }
+      h3 {
+        color: hsl(217, 19%, 35%);
+        font-size: 18px;
+        span {
+          display: block;
+          color: hsl(0, 0%, 81%);
+          font-size: 13px;
+        }
+      }
+    }
+    p:first-of-type {
+      font-size: 25px;
+      margin: 10px 0 20px;
+      color: hsl(217, 19%, 35%);
+    }
+    p:last-of-type {
+      color: hsl(217, 19%, 35%);
+    }
+  }
+  .box-4 {
+    grid-row: 2 / span 1;
+    grid-column: 4 / span 6;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 50px;
+        border-radius: 50%;
+        border: 3px solid hsl(0, 0%, 81%);
+      }
+      h3 {
+        font-size: 18px;
+        span {
+          display: block;
+          color: hsl(0, 0%, 81%);
+          font-size: 13px;
+        }
+      }
+    }
+    p:first-of-type {
+      font-size: 25px;
+      margin: 10px 0 20px;
+    }
+    p:last-of-type {
+      color: hsl(0, 0%, 81%);
+    }
+  }
+  .box-5 {
+    padding: 20px;
+    grid-row: 1 / span 2;
+    grid-column: 10 / span 3;
+    background-color: white;
+    border-radius: 10px;
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 50px;
+        border-radius: 50%;
+        border: 3px solid hsl(0, 0%, 81%);
+      }
+      h3 {
+        color: hsl(217, 19%, 35%);
+        font-size: 18px;
+        span {
+          display: block;
+          color: hsl(0, 0%, 81%);
+          font-size: 13px;
+        }
+      }
+    }
+    p:first-of-type {
+      font-size: 25px;
+      margin: 10px 0 20px;
+      color: hsl(217, 19%, 35%);
+    }
+    p:last-of-type {
+      color: hsl(0, 0%, 81%);
+    }
+  }
+}
